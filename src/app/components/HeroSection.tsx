@@ -2,17 +2,14 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 import CustomButton from './CustomButton';
-
 import Avatar from '@mui/material/Avatar';
-
 
 export default function HeroSection() {
     return (
         <Box textAlign="center" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '80vh' }}>
-
             <Avatar
                 alt="Profilbilde av Mostafa Mohammedi"
-                src="../mostafa.jpg"
+                src="/mostafa.jpg" // Husk å ha bildet i public-mappen
                 sx={{ width: 150, height: 150, marginBottom: '1.5rem' }}
             />
             <Typography variant="subtitle1" sx={{ color: '#64ffda', fontWeight: 'bold' }}>
